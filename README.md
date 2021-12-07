@@ -26,9 +26,9 @@ To test results with re-trained model or re-training en_ner_bc5cdr_md with custo
 
 ## Results
 
-|                        | CORONAVIRUS | EVOLUTION | WILDLIFE | PHYSICAL_SCIENCE | LIVESTOCK | SUBSTRATE | COUNTRY | IMMUNE_RESPONSE | MATERIAL | COVID_ACTIVITIES | OVERALL |
-|:----------------------:|:-----------:|:---------:|:--------:|:----------------:|:---------:|:---------:|:-------:|:---------------:|:--------:|:----------------:|:-------:|
-| Baseline  w/o training |    15.31    |     -     |     -    |         -        |     -     |     -     |    -    |      15.31      |     -    |         -        |   17.5  |
-|  Baseline w/ training  |    36.85    |   54.32   |   49.61  |       73.11      |   33.20   |   40.34   |  33.66  |      62.83      |   50.02  |         -        |  48.22  |
-|      BOND Stage I      |             |           |          |                  |           |           |         |                 |          |                  |         |
-|      BOND Stage II     |             |           |          |                  |           |           |         |                 |          |                  |         |
+|                        | CORONAVIRUS | EVOLUTION | WILDLIFE | PHYSICAL_SCIENCE | LIVESTOCK | SUBSTRATE | COUNTRY | IMMUNE_RESPONSE | MATERIAL | OVERALL |
+|:----------------------:|:-----------:|:---------:|:--------:|:----------------:|:---------:|:---------:|:-------:|:---------------:|:--------:|:-------:|
+| Baseline  w/o training |    15.31    |     -     |     -    |         -        |     -     |     -     |    -    |      15.31      |     -    |   17.5  |
+|  Baseline w/ training  |    36.85    |   54.32   |   49.61  |       73.11      |   33.20   |   40.34   |  33.66  |      62.83      |   50.02  |  48.22  |
+|      BOND Stage I      |             |           |          |                  |           |           |         |                 |          |         |
+|      BOND Stage II     |             |           |          |                  |           |           |         |                 |          |         |
