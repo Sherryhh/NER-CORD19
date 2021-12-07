@@ -16,7 +16,17 @@ BOND model can be found [here](https://drive.google.com/file/d/1oJGnfq34qzZZ3Msk
 
 ## Code
 ### Data Processsing
-To be filled 
+Use `utils.py` to extract body texts from Covid19 JSON files: <br>
+> python3 utils.py
+
+To generate indice for seeds in the raw text, uncomment the last in `utils.py`. <br>
+
+To run AutoPhrase for phrase mining, you can either download the [AutoPhrase](https://github.com/shangjingbo1226/AutoPhrase) repository or download the [CatE](https://github.com/yumeng5/CatE) repository which contains a copy of AutoPhrase. <br>
+> ./auto_phrase.sh
+
+To run CatE for seed set expansion, download the [CatE](https://github.com/yumeng5/CatE) repository. <br>
+Place `run_CatE.sh` in the root folder of CatE. <br>
+> ./run_CatE.sh
 
 ### Baseline
 To test results with en_ner_bc5cdr_md directly: <br>
