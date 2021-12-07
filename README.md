@@ -18,7 +18,7 @@ BOND model can be found [here](https://drive.google.com/file/d/1oJGnfq34qzZZ3Msk
 
 ## Code
 ### Data Processsing
-Use `utils.py` to extract body texts from Covid19 JSON files: <br>
+Use `utils.py` to extract body texts from Covid19 JSON files, nagative to [AutoPhrase_and_CatE](AutoPhrase_and_CatE): <br>
 > python3 utils.py
 
 To generate indice for seeds in the raw text, uncomment the last in `utils.py`. <br>
@@ -32,10 +32,10 @@ Place `run_CatE.sh` in the root folder of CatE. <br>
 
 ### Baseline
 To test results with en_ner_bc5cdr_md directly: <br>
-> base.ipynb
+> baseline/base.ipynb
 
 To test results with re-trained model or re-training en_ner_bc5cdr_md with custom entity types: <br>
-> baseline.ipynb
+> baseline/baseline.ipynb
 
 ### BOND
 To covert Spacy format date to IOB format: <br>
