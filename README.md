@@ -4,12 +4,12 @@
 Auto Phrasing, CatE, skweak, Sklearn, Spacy, SciSpacy, BOND
 
 ## Data
-Related data can be found [here](https://drive.google.com/drive/u/0/folders/1VMpbmjNZWOV4Y5LG9bv0_S5f0H8ciKj_)
+Related data can be found [here](some link)
 
 ## Model
 Spacy model en_ner_bc5cdr_md could be installed using pip inside the notebook or download [here](https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_ner_bc5cdr_md-0.4.0.tar.gz). <br>
 Modified en_ner_bc5cdr_md model that was trained with custom entity type can be download [here](https://drive.google.com/file/d/1Hn-KT0ErMbz5iGPfv6nFTJdMQet5wF3I/view?usp=sharing). <br>
-BOND model can be found ...[](some link). <br>
+BOND model can be found [here](https://drive.google.com/file/d/1oJGnfq34qzZZ3MskL_RzEi8BlZP2aopc/view?usp=sharing). <br>
 
 ## Code
 ### Data Processsing
