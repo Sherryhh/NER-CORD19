@@ -5,8 +5,10 @@ Auto Phrasing, CatE, skweak, Sklearn, Spacy, SciSpacy, BOND
 
 ## Data
 Related data: <br>
-[Texts](https://drive.google.com/file/d/1mHpSWhg5df_UzOChAB4RgNuqp0vOrXjf/view?usp=sharing) containing 12k articles. <br>
-[Seeds](https://drive.google.com/file/d/1GYjXaxPXT7zZHinnZRR4bSrTO3Wj6zef/view?usp=sharing) list generated from CatE. <br>
+[raw_text.txt](https://drive.google.com/file/d/1fR4yOOvkd_aED55HydX6KaYTPC_-4Zbw/view?usp=sharing) is the raw corpus. It is the input file for AutoPhrase. It contains 12k [Covid19-Open-Research-Dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) articles' body texts. Each line is a body text from one article. <br>
+[input_12k.txt](https://drive.google.com/file/d/1mHpSWhg5df_UzOChAB4RgNuqp0vOrXjf/view?usp=sharing) is the result text file after running AutoPhrase. At the same time, it is also the input file for CatE topic mining. In this file, text is lowercased and all AutoPhrase's mining results are replaced with its underscore-concatenated version. For example, "United States" is replaced with "united_states". <br>
+[seeds.txt](https://drive.google.com/file/d/1H0RjnwVe8GB9yMLU8PSvjF3D4wbGaVRx/view?usp=sharing) is the input file for CatE topic mining. It contains the seed list which we manually select. Each line contains 10 seeds for a category. From top to bottom, they are seeds for Location, Coronavirus, Livestock, Wildlife, Evolution, Physical Science, Substrate, Material, Immune Response, and Covid activities. <br>
+[CatE_expansion_result.txt](https://drive.google.com/file/d/1GYjXaxPXT7zZHinnZRR4bSrTO3Wj6zef/view?usp=sharing) is the result text file after running CatE. CatE expands the seed entity list and finds 50 entites for each category <br>
 Spacy format data can be found [here](https://drive.google.com/file/d/1XY6fgM4vCtbLEzjI7pPDwnj9F3VEEej3/view?usp=sharing) and IOB format data can be found in [IOB_scripts](https://github.com/Sherryhh/NER-CORD19/tree/main/IOB_scripts) and [BOND_training_scripts](https://github.com/Sherryhh/NER-CORD19/tree/main/Bond_training_scripts).
 
 ## Model
