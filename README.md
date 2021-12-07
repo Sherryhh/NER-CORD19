@@ -24,7 +24,7 @@ BOND model can be found [here](https://drive.google.com/file/d/1oJGnfq34qzZZ3Msk
 ## Code
 ### Data Processsing & Phrase Mining & Seed Set Expansion
 Use `utils.py` to extract body texts from Covid19 JSON files, nagative to [AutoPhrase_and_CatE](AutoPhrase_and_CatE): <br>
-Create a folder for Covid19 JSON files and change the data path in `utils.py` to this folder. <br>
+Create a folder for [Covid19-Open-Research-Dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) files and change the data path in `utils.py` to this folder. <br>
 *To generate indice for seeds in the raw text, uncomment the last line in `utils.py`.* <br>
 > python3 utils.py
 
