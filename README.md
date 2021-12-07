@@ -4,7 +4,7 @@
 Auto Phrasing, CatE, skweak, Sklearn, Spacy, SciSpacy, BOND
 
 ## Data
-Related data can be found ...[data](https://drive.google.com/drive/u/0/folders/1VMpbmjNZWOV4Y5LG9bv0_S5f0H8ciKj_)
+Related data can be found [here](https://drive.google.com/drive/u/0/folders/1VMpbmjNZWOV4Y5LG9bv0_S5f0H8ciKj_)
 
 ## Model
 Spacy model en_ner_bc5cdr_md could be installed using pip inside the notebook or download [here](https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_ner_bc5cdr_md-0.4.0.tar.gz). <br>
