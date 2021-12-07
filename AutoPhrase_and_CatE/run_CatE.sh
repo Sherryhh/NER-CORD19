@@ -2,7 +2,7 @@ cd src
 make cate
 cd ..
 
-./src/cate -train ./datasets/covid19/input_8k.txt -topic-name ./datasets/covid19/topics.txt \
+./src/cate -train ./datasets/covid19/input_12k.txt -topic-name ./datasets/covid19/seeds.txt \
 	-load-emb word2vec_100.txt \
 	-spec ./datasets/covid19/emb_topics_spec.txt \
 	-word-emb ./datasets/covid19/emb_topics_w.txt \

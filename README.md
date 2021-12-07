@@ -5,10 +5,15 @@ Auto Phrasing, CatE, skweak, Sklearn, Spacy, SciSpacy, BOND
 
 ## Data
 Related data: <br>
+
 [raw_text.txt](https://drive.google.com/file/d/1fR4yOOvkd_aED55HydX6KaYTPC_-4Zbw/view?usp=sharing) is the raw corpus. It is the input file for AutoPhrase. It contains 12k [Covid19-Open-Research-Dataset](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) articles' body texts. Each line is a body text from one article. <br>
+
 [input_12k.txt](https://drive.google.com/file/d/1mHpSWhg5df_UzOChAB4RgNuqp0vOrXjf/view?usp=sharing) is the result text file after running AutoPhrase. At the same time, it is also the input file for CatE topic mining. In this file, text is lowercased and all AutoPhrase's mining results are replaced with its underscore-concatenated version. For example, "United States" is replaced with "united_states". <br>
+
 [seeds.txt](https://drive.google.com/file/d/1H0RjnwVe8GB9yMLU8PSvjF3D4wbGaVRx/view?usp=sharing) is the input file for CatE topic mining. It contains the seed list which we manually select. Each line contains 10 seeds for a category. From top to bottom, they are seeds for Location, Coronavirus, Livestock, Wildlife, Evolution, Physical Science, Substrate, Material, Immune Response, and Covid activities. <br>
+
 [CatE_expansion_result.txt](https://drive.google.com/file/d/1GYjXaxPXT7zZHinnZRR4bSrTO3Wj6zef/view?usp=sharing) is the result text file after running CatE. CatE expands the seed entity list and finds 50 entites for each category <br>
+
 Spacy format data can be found [here](https://drive.google.com/file/d/1XY6fgM4vCtbLEzjI7pPDwnj9F3VEEej3/view?usp=sharing) and IOB format data can be found in [IOB_scripts](https://github.com/Sherryhh/NER-CORD19/tree/main/IOB_scripts) and [BOND_training_scripts](https://github.com/Sherryhh/NER-CORD19/tree/main/Bond_training_scripts).
 
 ## Model
@@ -17,16 +22,23 @@ Modified en_ner_bc5cdr_md model that was trained with custom entity type can be 
 BOND model can be found [here](https://drive.google.com/file/d/1oJGnfq34qzZZ3MskL_RzEi8BlZP2aopc/view?usp=sharing). <br>
 
 ## Code
-### Data Processsing
+### Data Processsing & Phrase Mining & Seed Set Expansion
 Use `utils.py` to extract body texts from Covid19 JSON files, nagative to [AutoPhrase_and_CatE](AutoPhrase_and_CatE): <br>
-*To generate indice for seeds in the raw text, uncomment the last in `utils.py`.* <br>
+Create a folder for Covid19 JSON files and change the data path in `utils.py` to this folder. <br>
+*To generate indice for seeds in the raw text, uncomment the last line in `utils.py`.* <br>
 > python3 utils.py
 
-To run AutoPhrase for phrase mining, you can either download the [AutoPhrase](https://github.com/shangjingbo1226/AutoPhrase) repository or download the [CatE](https://github.com/yumeng5/CatE) repository which contains a copy of AutoPhrase. <br>
+To run AutoPhrase for phrase mining, you can either download the [AutoPhrase](https://github.com/shangjingbo1226/AutoPhrase) repository or download the [CatE](https://github.com/yumeng5/CatE) repository which contains a copy of AutoPhrase tool inside it. <br>
+For convenience, you can just download the CatE repository. <br>
+Place the `raw_text.txt` in CatE's `datasets` directory. <br>
+set the path of `raw_text.txt` in CatE's `/preprocess/auto_phrase.sh`. <br>
 > ./auto_phrase.sh
 
 To run CatE for seed set expansion, download the [CatE](https://github.com/yumeng5/CatE) repository. <br>
 Place `run_CatE.sh` in the root folder of CatE. <br>
+Create a folder called `covid19` inside CatE's `dataset` folder. <br>
+Place `input_12k.txt` and `seeds.txt` inside `covid19` folder. <br>
+Unzip the `word2vec_100.zip` in the CatE's root folder. <br>
 > ./run_CatE.sh
 
 ### Baseline

@@ -204,4 +204,4 @@ if __name__ == "__main__":
     file_path = extract_text(file_list)
     # file_path = delete_blank_line(file_path)
     preprocess(file_path)
-    # res_path = find_seed_index('res_topics.txt', 'raw_text.txt')
+    # res_path = find_seed_index('seeds.txt', 'raw_text.txt')
